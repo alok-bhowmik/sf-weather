@@ -1,0 +1,18 @@
+.card_boundary{
+    box-shadow: 2px 5px 8px  #b9c0bb;
+    height: 376px;
+    /* background-color: azure; */
+}
+.tableName{
+    color: hwb(330 58% 39%);
+    /* background-color: azure; */
+    font-family: 'Trebuchet MS', sans-serif;
+    /* font-style: italic; */
+    /* text-indent: 100px; */
+}
+.slds-text-color_success{
+    color: #060707ec;
+    /* background-color: azure; */
+    font-family: "Lucida Console", "Courier New", monospace;
+    /* font-style: italic; */
+}

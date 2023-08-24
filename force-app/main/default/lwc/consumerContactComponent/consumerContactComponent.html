@@ -1,0 +1,48 @@
+<template>
+  <template if:true={isModalShow}>
+      <section role="dialog" tabindex="-1" aria-modal="true" aria-labelledby="modal-heading-01"
+          class="slds-modal slds-fade-in-open slds-modal_small">
+          <div class="slds-modal__container">
+              <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse">
+                    <svg class="slds-button__icon slds-button__icon_large" aria-hidden="true">
+                      <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#close"></use>
+                  </svg>
+                  <span class="slds-assistive-text">Cancel and close</span>
+              </button>
+              <div class="slds-modal__header" >
+                  <lightning-icon icon-name="standard:contact" size="small" style="position:absolute;top:27%;left:22%;"></lightning-icon>
+                  <h1 id="modal-heading-01" class="slds-modal__title slds-hyphenate" >Consumer Contact - Create New Contact</h1>
+              </div>
+              <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                  <div style="background-color: rgb(201, 201, 201);">
+                      <p style="font-size: 140%; margin-left:3%;">Contact Information</p>
+                  </div>
+                  <br/>
+                  <lightning-record-edit-form 
+                      object-api-name="Contact"
+                      onsuccess={handleSuccess}
+                      columns="2"
+                      onerror={handleError}>
+                      <div style="column-count:2">
+                          <template for:each={fields} for:item="f">
+                              <div key={f}>
+                                  <span>
+                                      <lightning-input-field field-name={f}></lightning-input-field>
+                                  </span>
+                              </div>
+                          </template>
+                      </div>
+                      <div class="slds-col slds-size_1-of-2">
+                          <lightning-input-field field-name="RecordTypeId" value={recordType}></lightning-input-field>
+                      </div>
+                      <div align="center">
+                          <lightning-button label="Cancel" onclick={handleCancel}></lightning-button>
+                          &nbsp;&nbsp;&nbsp;
+                          <lightning-button type="submit" name="save" variant="brand" label="Save"></lightning-button>
+                      </div>
+                  </lightning-record-edit-form>
+              </div>
+          </div>
+      </section>
+  </template>
+</template>

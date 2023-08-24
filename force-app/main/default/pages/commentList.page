@@ -1,0 +1,14 @@
+<apex:page standardController="Comment__c" recordSetVar="Comment">
+    <apex:form >
+         <apex:pageBlock title=" Feedback List">
+            <apex:pageBlockTable value="{!Comment}" var="ld">
+                
+                   <apex:column value="{! ld.Name }"/>
+                   <apex:column value="{! ld.Email__c }"/> 
+                   <apex:column value="{! ld.Subject__c }"/>
+                   <apex:column value="{! ld.Message__c }"/>
+                   
+        </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,99 @@
+<apex:page standardController="Comment__c" docType="html-5.0" >
+    
+    <apex:form >
+    
+  <style  type="text/css">
+  
+      .first
+      {
+            background-color:#000037;
+            margin-left:-20px;
+            margin-right:-20px;
+            margin-top:-7px;
+      }               
+    
+    
+    .sec
+     {
+        padding:150px
+        top:30px;
+        margin-left:100px
+     }
+   
+   
+    .hours
+    {
+         position:relative;
+         margin-left:850px;
+         top:-420px
+    }
+    
+    .com
+    {
+         margin-left: 100px;
+    }
+    
+    .time
+    {
+        margin-left: 850px;
+        font-size:20px;
+        top:130px;
+        position:absolute;
+        color:white;
+    }
+    
+      </style>
+      
+      <div class="first">
+      
+    
+        <div class="com">
+            
+               <br/><br/><br/>  <b> <h2 style="font-size:30px;   color:red;" > FEEDBACK</h2></b> <br/>
+               
+     </div>
+     
+     
+     <div class="sec">
+        
+         <br/>  
+           <apex:inputField value="{!Comment__c.Name}"  html-placeholder="Name" style="height:30px;width:200px;"/>
+         
+            <apex:inputField value="{!Comment__c.Email__c}" html-placeholder="Email" style="height:30px;width:200px" /> <br/><br/>
+            
+               <apex:inputField value="{!Comment__c.Subject__c}" html-placeholder="Subject" style="height:30px;width:410px;"/><br/><br/>
+           
+              <apex:inputField value="{!Comment__c.Message__c}" html-placeholder="Message" style="height:200px;width:410px;"/><br/><br/>
+              
+              <apex:commandButton value="Submit" action="{!Save}"/>
+        
+                
+       </div>
+        
+   <div class="hours">
+            
+                 <br/><br/>  <b> <h2 style="font-size:30px;   color:red;" > OPENING HOURS </h2></b> <br/>
+               
+     </div>
+     
+     <div class="time">
+     
+     
+             <div> * Monday: 5:00AM - 10:00PM </div> <br/>
+             <div> * Tuesday: 5:00AM - 10:00PM </div> <br/>
+             <div> * Wednesday: 5:00AM - 10:00PM </div> <br/>
+             <div> * Thursday: 5:00AM - 10:00PM </div> <br/>
+             <div> * Friday: 5:00AM - 10:00PM </div> <br/>
+             <div> * Satuday: 5:00AM - 10:00PM </div> <br/>
+             <div> * Sunday: 5:00AM - 10:00PM </div> <br/>     
+             
+             
+             </div>                       
+                                        
+   
+      </div>
+  
+   </apex:form>
+  
+    
+</apex:page>

@@ -1,0 +1,3 @@
+<aura:component implements="flexipage:availableForAllPageTypes,lightning:actionOverride" >
+    <c:consumerContactComponent aura:id="consumerContactComponent"></c:consumerContactComponent>
+</aura:component>

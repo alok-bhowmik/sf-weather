@@ -1,0 +1,58 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 11-24-2022
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+<lightning-card title="Account Pagination">
+    <lightning-combobox  name="StageName" 
+                            label="Show Entries" 
+                            value={pageSize} 
+                            options={options}
+                            onchange={handleChange}>
+    </lightning-combobox>
+    <lightning-input  type="search" 
+                        onchange={handleKeyChange} 
+                        label="Search"
+                        value={searchKey} 
+                        placeholder="Type Account Name..">
+    </lightning-input>   
+    
+    <lightning-datatable data-id="table" 
+                            key-field="Id" 
+                            data={data} 
+                            columns={columns} >
+    </lightning-datatable>
+        <lightning-button label="Previous" 
+                        variant="brand" 
+                        icon-name="utility:chevronleft" 
+                        onclick={previousHandler}
+                        disabled={showPreviousButton}>
+    </lightning-button>
+    <lightning-button label="First" 
+                        variant="brand" 
+                        icon-name="utility:chevronright" 
+                        icon-position="right"
+                        onclick={firstHandler}
+                        disabled={showPreviousButton}>
+    </lightning-button>
+    <p>{startingRecord} to {endingRecord} of {totalRecordCount} . page {page}of{totalPage}</p>
+    <lightning-button label="Next" 
+                        variant="brand" 
+                        icon-name="utility:chevronright" 
+                        icon-position="right"
+                        onclick={nextHandler}
+                        disabled={showNextButton}>
+    </lightning-button>
+    <lightning-button label="Last" 
+                        variant="brand"   
+                        icon-name="utility:chevronright" 
+                        icon-position="right"
+                        onclick={lastHandler}
+                        disabled={showNextButton}>
+        </lightning-button>
+</lightning-card>
+
+</template>

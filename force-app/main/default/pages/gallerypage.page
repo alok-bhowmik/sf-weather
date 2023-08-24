@@ -1,0 +1,55 @@
+<apex:page >
+    <apex:form >
+    <style>
+     .div1{
+     background-color:black;
+     position:relative;
+     margin-left:-200;
+    }
+    </style>
+    <div class="div1">
+         &nbsp;&nbsp;&nbsp;
+    <apex:image url="https://goldsgym.in/uploads/gallery/compress-photo-1558611848-73f7eb4001a1.jpg" height="280" width="380"/>
+         &nbsp;&nbsp;&nbsp;
+    <apex:image url="https://goldsgym.in/uploads/gallery/compress-photo-1561214078-f3247647fc5e.jpg" height="280" width="380"/>
+         &nbsp;&nbsp;&nbsp;
+    <apex:image url="https://goldsgym.in/uploads/gallery/compress-photo-1546483875-ad9014c88eba.jpg" height="280" width="380"/>
+   
+  <span style="margin-left:10px">
+    <apex:image url="https://hammers.fit/wp-content/uploads/2019/03/IMG-20190305-WA00429-800x600.png" height="280" width="380"/>
+       </span> 
+        &nbsp;&nbsp;&nbsp;
+    <apex:image url="https://hammers.fit/wp-content/uploads/2019/03/IMG-20190305-WA00426-800x600.png" height="280" width="380"/>
+        &nbsp;&nbsp;&nbsp;
+    <apex:image url="https://hammers.fit/wp-content/uploads/2019/03/IMG-20190305-WA00424-800x600.png" height="280" width="380"/>
+     <span style="margin-left:10px">
+    <apex:image url="https://goldsgym.in/uploads/gallery/compress-GOLDS_1920x1080_2__1599152923_11541.jpg" height="280" width="380"/>
+         </span> 
+       &nbsp;&nbsp;&nbsp;
+    <apex:image url="https://goldsgym.in/uploads/gallery/compress-GOLDS_1920x1080_7__1599153086_66614.jpg" height="280" width="380"/>
+       &nbsp;&nbsp;&nbsp;
+    <apex:image url="https://goldsgym.in/uploads/gallery/compress-GOLDS_1920x1080_6__1599153050_98558.jpg" height="280" width="380" /> 
+   <span style="margin-left:10px">
+       <apex:image url="https://lh3.googleusercontent.com/p/AF1QipPEV8C0IHYROtxzrFacf5pjAz_qT0xPgy9vVCTM=w960-h960-n-o-v1" height="280" width="380"/>
+        </span> 
+    &nbsp;&nbsp;&nbsp;
+    <apex:image url="https://lh3.googleusercontent.com/p/AF1QipMXl8Jk2mhPZ9c6VXjEeCFXime-IzCA9G6QIyIq=w960-h960-n-o-v1" height="280" width="380" />
+    &nbsp;&nbsp;&nbsp;
+    <apex:image url="https://lh3.googleusercontent.com/p/AF1QipPUliTn53ysKnyEF9vDTVcLW2Vdb5LFijrMm5_g=w960-h960-n-o-v1" height="280" width="380"/>
+    <span style="margin-left:10px">
+    <apex:image url="https://yoactiv.s3.amazonaws.com/gallery/gallry/2053.jpg" height="280" width="380"/>
+        </span> 
+    &nbsp;&nbsp;&nbsp;
+    <apex:image url="https://www.fitnessfirst.net.in/sites/default/files/styles/style_1200x500/public/club1.jpg?itok=1WNoapWy" height="280" width="380"/>
+    &nbsp;&nbsp;&nbsp;
+    <apex:image url="https://www.fitnessfirst.net.in/sites/default/files/styles/style_1200x500/public/club6.jpg?itok=WZRjnRpJ" height="280" width="380" />
+     <span style="margin-left:10px">
+         <apex:image url="https://goldsgym.in/uploads/gallery/compress-GOLDS_1920x1080_3__1599152955_85549.jpg" height="280" width="380"/>
+        </span> 
+    &nbsp;&nbsp;&nbsp;
+    <apex:image url="https://goldsgym.in/uploads/gallery/compress-GOLDS_1920x1080_11__1599153202_22254.jpg" height="280" width="380"/>
+    &nbsp;&nbsp;&nbsp;
+    <apex:image url="https://goldsgym.in/uploads/gallery/compress-GOLDS_1920x1080_12__1599153228_32381.jpg" height="280" width="380"/>
+  </div>
+</apex:form>
+</apex:page>

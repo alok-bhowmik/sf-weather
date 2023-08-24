@@ -1,0 +1,272 @@
+<apex:page >
+     <style  type="text/css">
+         .first
+         {
+              background-color:#000037;
+              color: White;
+          }
+         
+         
+<!------------------------------------------table-------------------------------------------------------------------->         
+    
+    table, th, td
+     {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 2px;
+        background-color:;
+     }
+     
+         .table tr
+          {
+            height: 40px;
+            font-size:13.85px;
+          }
+         
+         .table1 tr 
+         {
+            height: 40px;
+            font-size:13.85px;
+         }
+         
+         .table2 tr 
+         {
+            height: 40px;
+            font-size:13.7px;
+         }
+         
+         thead 
+         {
+            background-color:#B9BAB3;
+         }
+         
+         tbody 
+         {
+            background-color:#bcd4e6;
+         }
+         
+         tfoot 
+         {
+            background-color:#ffc40c;
+         }
+
+ <!----------------------------------------------------------------------------------------------------------------->        
+         
+         .block1
+         {
+            margin-left: 175px;
+            margin-right:240px;
+         }
+      
+         
+         h2
+         {
+         
+            margin-left: 400px;
+          
+         }
+      
+ <!------------------------------------------Buy--------- text-align: center;------------------------------------------------------------>        
+         
+          .buybotton2
+          {
+             margin-left: 350px;
+             font-size: 16px;
+          }
+          
+         .buybotton1
+         {
+            margin-left: 350px;
+            font-size: 16px
+         }
+         
+         .buybotton
+         {
+            margin-left: 350px;
+            font-size: 16px
+         }
+ <!---------------------------------------------------------------------------------------------------------------->      
+   
+    </style>
+    
+    <apex:form >
+        
+        <div class="first">
+          
+          <apex:pageBlock > 
+      
+        <div class="Body">
+            
+      
+              <!--div-->
+              
+                 
+                 <b> <h2 style="font-size:30px;   color:black;" >Membership Plans</h2></b> <br/><br/><br/>
+                 
+ <!----------------------------------1st Div------------------------------------------------------------------------>               
+                 
+                   <div class="block1">
+                     
+                       <apex:pageBlock >  
+                           
+                             <table class="table" >
+                                
+                                <thead>
+                                    <tr>
+                                    <th  colspan="3">
+                                    
+                                    
+                                       <b  style="margin-left:330px"> 3 Months</b>
+                                       
+                                       </th>
+                                       
+                                       
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <th>
+                                        
+                                        <span style="margin-left:70px"> Validity </span> 
+                                        <span style="margin-left:233px"> : </span> 
+                                        <span style="margin-left:255px"> 90 Days </span> 
+
+                                        
+                                       </th>
+                                   </tr>
+                                  
+                                  
+                                   <tr>
+                                        <th>
+                                        
+                                         <span style="margin-left:70px"> Amount</span> 
+                                        <span style="margin-left:230px"> : </span> 
+                                        <span style="margin-left:255px"> 6999 </span> 
+                                        
+                                        </th>
+                                    </tr>
+                                  </tbody>
+                                 <tfoot>
+                                 <tr> 
+                                       <th>
+                                           <a href="https://buy.stripe.com/test_cN22bu0Fe2gyakMaEF" class="buybotton2">Buy</a>
+                                       </th>
+                                 </tr>
+                                 </tfoot>
+                               </table><br/>                            
+                          </apex:pageBlock>
+                       </div>
+                   <!--/div-->
+                   
+ <!--------------------------------------------2nd Div----------------------------------------------------------------->        
+        
+        
+                  <div  class="block1">    
+                               
+                      <apex:pageBlock >    
+                             
+                          <table class="table1">
+                             <thead>
+                                 <tr>
+                                    <th  colspan="3">
+                                    
+                                    <b  style="margin-left:330px"> 6 Months</b>
+                                    
+                                        </th>
+                                  </tr>
+                              </thead>
+                              
+                                  <tbody>
+                                  <tr>
+                                        <th>
+                                        
+                                           <span style="margin-left:70px"> Validity </span> 
+                                           <span style="margin-left:233px"> : </span> 
+                                           <span style="margin-left:255px"> 180 Days </span>   
+                                        
+                                        </th>
+                                   </tr>
+                                  
+                                   <tr>
+                                        <th>
+                                        
+                                             <span style="margin-left:70px"> Amount</span> 
+                                             <span style="margin-left:230px"> : </span> 
+                                             <span style="margin-left:255px"> 9999 </span> 
+                                        
+                                         </th>
+                                    </tr>
+                                
+                              </tbody>
+                              
+                              <tfoot>
+                                 <tr> 
+                                       <th>
+                                           <a href="https://buy.stripe.com/test_8wMeYg3Rq1cufF67su" class="buybotton1">Buy</a>
+                                       </th>
+                                 </tr>
+                                 </tfoot>
+                                 
+                          </table><br/>
+                       
+                  </apex:pageBlock>
+              </div>
+              
+ <!------------------------------------------3rd Div----------style="width:30%"----------------------------------------------------->       
+         
+           <div  class="block1" >   
+           
+               <apex:pageBlock >
+               
+                      <table class="table2">
+                          <thead>
+                               <tr>
+                                    <th  colspan="3">
+                                    
+                                        <b  style="margin-left:330px"> 12 Months</b>
+                                    
+                                    </th>
+                                </tr>
+                             </thead>
+                             
+                             <tbody>
+                                <tr>
+                                     <th>
+                                     
+                                           <span style="margin-left:70px"> Validity </span> 
+                                           <span style="margin-left:233px"> : </span> 
+                                           <span style="margin-left:255px"> 365 Days </span>   
+                                     
+                                    </th>
+                                 </tr>
+                                 <tr>
+                                      <th>
+                                      
+                                            <span style="margin-left:70px"> Amount</span> 
+                                             <span style="margin-left:230px"> : </span> 
+                                             <span style="margin-left:255px"> 15999 </span> 
+                                      
+                                      </th>
+                                  </tr>
+                            </tbody>
+                            
+                            <tfoot>
+                                 <tr> 
+                                       <th>
+                                           <a href="https://buy.stripe.com/test_00gdUccnW8EW3WoeUX" class="buybotton2">Buy</a>
+                                       </th>
+                                 </tr>
+                                 </tfoot>
+                                 
+                       </table><br/>    
+         </apex:pageBlock>
+     </div>
+     
+ <!----------------------------------------------------------------------------------------------------------------->           
+           
+             </div>
+             
+              </apex:pageBlock> 
+            </div>
+    </apex:form>
+</apex:page>

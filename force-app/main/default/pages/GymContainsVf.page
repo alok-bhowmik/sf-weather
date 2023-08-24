@@ -1,0 +1,64 @@
+<apex:page >
+    <apex:form >
+    <style type="text/css">
+       .contains {
+         background-color:#000037;
+         color: White;
+         font-family: "Titillium Web", sans-serif;
+         height: 680px;
+         margin-left:-19px;
+        margin-right:-19px;
+        height:700px;
+        margin-top:-10px;
+        }
+    <!--   h1 {
+          font-size: 40px;
+            font-color: White;
+           
+        }-->
+      
+       
+        p {
+        font-size: 18px;
+        margin-top:20px;
+        background-color: transparent;
+        }
+     </style>
+    <div class="contains">
+         
+        <!--<center><h1>Welcome to Muscle Maniac</h1></center><br/>-->
+       <br/><br/><br/> <center><h1 style="font-size: 30px;">Your fitness preferences under one roof!</h1></center><br/><br/><br/>
+
+
+    
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;Physical fitness has been a critical aspect of everyday life, apart from having the
+            personal intention of pursuing bodybuilding at a gym in<br/>&nbsp;&nbsp;&nbsp; <span style="color: Red">
+            Koramangala. </span> <br/><br/>
+
+&nbsp;&nbsp;&nbsp;&nbsp;However, staying active has become inevitable; modern-day life requires you to be mentally 
+ sharp with a physical fitness level. People who <br/>&nbsp;&nbsp;&nbsp;search for the big gyms in Bangalore could 
+ find the hammers Koramangala, worth their money.<br/><br/>
+
+&nbsp;&nbsp;&nbsp;&nbsp;Besides, regular exercise produces strong muscles and strength and keeps up your health quotient
+  by making your cardiovascular intact and<br/>&nbsp;&nbsp;&nbsp; abstaining from certain metabolic diseases. However, 
+  many firms opt for the best corporate gym in Bangalore and keep their employees fit <br/>&nbsp;&nbsp;&nbsp;and fine.
+  If you want to pursue fitness, the workouts gym Koramangala would be a viable choice to make.<br/><br/>
+
+<b>&nbsp;&nbsp;&nbsp;What are your preferences?</b><br/><br/>
+
+&nbsp;&nbsp;&nbsp;&nbsp;Recently, the fitness world has been bombarded with several training techniques or methods. 
+ They are accessible under a fitness trainer in<br/>&nbsp;&nbsp;&nbsp;Koramangala. Whether the Zumba or Tabata, weight
+ management, or fat loss, you get all under one roof in the world-class  gyms in Bangalore.<br/>&nbsp;&nbsp;&nbsp; 
+ Besides, you get a <span style="color: Red"> professional bodybuilding consultation</span> for your next stage 
+ performance.<br/><br/>
+
+<b>&nbsp;&nbsp;&nbsp;What should you look for?</b><br/><br/>
+
+    &nbsp;&nbsp;&nbsp;1. The <span style="color: Red">Zumba</span> for weight loss <br/>
+&nbsp;&nbsp;&nbsp;2. <span style="color: Red">Tabata</span> training for strength and agility<br/>
+&nbsp;&nbsp;&nbsp;3. Personal gym trainers exclusively<br/>
+&nbsp;&nbsp;&nbsp;4. World-class facilities with a spacious amenity</p>
+    </div>
+   
+      </apex:form>
+</apex:page>

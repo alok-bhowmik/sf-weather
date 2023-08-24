@@ -1,0 +1,113 @@
+<!--
+@description       : 
+@author            : ChangeMeIn@UserSettingsUnder.SFDoc
+@group             : 
+@last modified on  : 11-28-2022
+@last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+    <lightning-card>
+        <div class="slds-grid">
+            <div class="slds-col">
+                <div class="demo-only demo-only--sizing slds-grid slds-wrap">
+                    <div class="slds-size_2-of-3">
+                        <div class="slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small">
+                            <div class="slds-grid">
+                                <div class="slds-col">
+                                    <span>
+                                        <div title="Search Contact" 
+                                            class="haddingColor slds-grid slds-grid_vertical">
+
+                                            <lightning-input class="slds-col sldsInput" type="search"
+                                                placeholder="Search Contact Name..." onchange={searchHandle}>
+                                            </lightning-input><br>
+                                            <div class="slds-scrollable_y slds-col" style="height:18rem;width:32rem">
+                                                <div class="slds-grid ">
+                                                    <div class="slds-col">
+                                                        <span>
+                                                            <div>
+                                                                <template if:true={Records}>
+                                                                    <template for:each={Records} for:item="Con">
+                                                                        <span key={Con.Id} class="slds-card">
+
+                                                                            <div class="slds-grid slds-card  slds-m-around_small slds-p-vertical_small slds-p-around_medium ">
+                                                                                <div class="slds-col slds-list__item slds-m-right_large slds-grid">
+                                                                                    <div class="slds-col slds-size_9-of-12 slds-grid slds-wrap">
+                                                                                        
+                                                                                            <div class="slds-col slds-size_3-of-12">
+                                                                                                <a href="#" class="slds-avatar  slds-avatar_large slds-avatar_left">
+                                                                                                    <span>
+                                                                                                        <lightning-formatted-rich-text
+                                                                                                            value={Con.Profile_Image__c}>
+                                                                                                        </lightning-formatted-rich-text>
+                                                                                                    </span>
+                                                                                                </a>
+                                                                                            </div>
+                                                                                            <div
+                                                                                                class="slds-col slds-size_9-of-12" style="text-align: left;">
+                                                                                                <div
+                                                                                                    class="slds-grid slds-grid_vertical">
+                                                                                                    <div
+                                                                                                        class="slds-col nameAllin">
+                                                                                                        <b class="name">
+                                                                                                            {Con.Name}
+                                                                                                        </b><br>
+                                                                                                    </div>
+                                                                                                    <!-- <p class="slds-text-align_left"> </p>-->
+                                                                                                    <div
+                                                                                                        class="slds-col ">
+                                                                                                        <p
+                                                                                                            class="email">
+                                                                                                            {Con.Email}
+                                                                                                        </p>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        
+                                                                                    </div>
+                                                                                    <div
+                                                                                        class="slds-col slds-size_3-of-12">
+                                                                                        <!-- <div
+                                                                                            class="slds-col slds-icon slds-input__icon  slds-icon-text-default"> -->
+                                                                                            
+                                                                                                <lightning-button
+                                                                                                    class="button slds-button__icon_right"
+                                                                                                    label="View"
+                                                                                                    data-id={Con.Id}
+                                                                                                    value={Con}
+                                                                                                  
+                                                                                                    onclick={view}>
+                                                                                                </lightning-button>
+                                                                                            
+                                                                                        <!-- </div> -->
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </span>
+                                                                    </template>
+                                                                </template>
+                                                            </div>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slds-size_1-of-3 ">
+                        <div class=" slds-text-align_center slds-m-around_x-small">
+                            <div>
+                                <span>
+                                    <c-contact-pagination-child></c-contact-pagination-child>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </lightning-card>
+</template>

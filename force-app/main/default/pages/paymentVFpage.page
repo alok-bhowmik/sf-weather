@@ -1,0 +1,46 @@
+<apex:page Controller="cardpaymentHandler">
+    <style  type="text/css">
+    .div1{
+     
+     
+    }
+        .div3{
+         text-align: center;
+        }
+        h1{
+         font-size: 25px;
+        
+        }
+        
+ 
+    </style>
+    <apex:form >
+        <script>
+         function otpgenerate(){
+             let num='1234567890';
+               let OTP='';
+        for(let i=0;i<4; i++){
+            OTP+=num[math.floor(Math.random()*10)]; 
+           }
+             console.log(OTP)
+        </script>
+   <center> <h1>
+        Card Details
+        </h1></center><br/>
+        
+        <apex:pageBlock >
+            <div  class="div1">
+                 <apex:pageBlockSection >
+                <apex:inputField value="{!pay.Card_Holder_Name__c}" label="Card Holder Name" /> <br/><br/>
+                     <apex:inputField value="{!pay.Card_Number__c}" /><br/>
+                <apex:inputField value="{!pay.Expiray_Date__c}" />
+                <apex:inputField value="{!pay.CVV__c}" />
+             
+                 <apex:commandButton value="save" action="{!save}" />
+                      
+            </apex:pageBlockSection>
+            </div>
+        </apex:pageBlock>
+   
+    </apex:form>
+</apex:page>

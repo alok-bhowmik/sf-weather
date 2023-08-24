@@ -1,0 +1,193 @@
+<!--
+@description       : 
+@author            : ChangeMeIn@UserSettingsUnder.SFDoc
+@group             : controller="getAccountRecord"
+@last modified on  : 04-07-2023
+@last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+
+<apex:page controller="getFieldSetsFromAccount" sidebar="false">  
+
+<style>
+  .flex-container {
+    
+  background-color:white;
+  padding: 0px;
+    /* background-color:white;
+    justify-content: center; */
+  }
+ 
+
+  body, td {
+    font-family: Arial,Helvetica,sans-serif;
+    color: #222;
+    margin-left: -76px;
+}
+  .flex {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 80px;
+    font-size: 15px;
+    margin-top: -42px;
+    /* justify-content: center;  */
+
+  }
+  img {
+    border: 0;
+    max-width: 190px;
+}
+
+ /* .logo{
+  padding-left: 50px;
+  width: 200px;
+ } */
+ .info{
+    /* max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-style: none; */
+    padding-left: 114px;
+   
+ } 
+ .sfdc_richtext img {
+    border: 0;
+    width: 190px;
+    padding-left: 250px;
+}
+.calllogo{
+  width: 20px;
+}
+.conlogo{
+    width: 20px; 
+}
+.msglogo{
+  width: 20px;
+}
+.logo1{
+  width: 20px;
+}
+a {
+    /* color: #007bff; */
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+    color: #4a7722;
+}
+  </style>
+
+
+
+<apex:form >
+  <center><h1>UAT Account From MD</h1></center>
+  <div class="flex-container">
+
+    <apex:repeat value="{!accList}" var="acc">
+        <div class="flex">
+            <div class="logo">       
+
+                <apex:outputField styleClass="info" value="{!acc.Logo_URL__c}"/>
+            </div>
+
+            <div class="info">
+                <b>{!acc.Name}</b><br/>
+                <!-- {!acc.Display_Contact__r.Name}<br/> -->
+                <span>
+                    <img src="{!$Resource.ContactLogo}"  class="conlogo"/>&nbsp;&nbsp;&nbsp;  
+                         <apex:outputLink value="/{!acc.id}" 
+                                          target="_blank"> 
+                                          {!acc.Display_Contact__r.Name} 
+                         </apex:outputLink>
+                </span><br/>
+
+
+
+                <span>
+                    <img src="{!$Resource.cll}"  class="calllogo"/>&nbsp;&nbsp;&nbsp;  
+                         <apex:outputLink value="/{!acc.id}" 
+                                          target="_blank"> 
+                                          {!acc.Phone} 
+                         </apex:outputLink>
+                </span><br/>  
+
+                <span>
+                  <img src="{!$Resource.msg}"  class="msglogo"/>&nbsp;&nbsp;&nbsp;  
+                       <apex:outputLink value="/{!acc.id}" 
+                                        target="_blank"> 
+                                        {!acc.Email__c} 
+                       </apex:outputLink>
+                </span><br/> 
+                <span>
+                  <img src="{!$Resource.logo1}"  class="logo1 "/>&nbsp;&nbsp;&nbsp;  
+                       <apex:outputLink value="/{!acc.id}" 
+                                        target="_blank"> 
+                                        {!acc.Website} 
+                       </apex:outputLink>
+                </span><br/> 
+                <!-- <br/>{!acc.AnnualRevenue} -->
+           </div>
+        </div> <br/>  
+
+        <hr style="width:80%;text-align:center;margin-left:100px"/>
+
+    </apex:repeat>
+  </div>
+
+
+
+
+  <center><h1>UAT Account From PA</h1></center>
+  <div class="flex-container">
+
+    <apex:repeat value="{!accList1}" var="acc">
+        <div class="flex">
+            <div class="logo">       
+
+                <apex:outputField styleClass="info" value="{!acc.Logo_URL__c}"/>
+            </div>
+
+            <div class="info">
+                <b>{!acc.Name}</b><br/>
+                <!-- {!acc.Display_Contact__r.Name}<br/> -->
+                <span>
+                    <img src="{!$Resource.ContactLogo}"  class="conlogo"/>&nbsp;&nbsp;&nbsp;  
+                         <apex:outputLink value="/{!acc.id}" 
+                                          target="_blank"> 
+                                          {!acc.Display_Contact__r.Name} 
+                         </apex:outputLink>
+                </span><br/>
+
+
+
+                <span>
+                    <img src="{!$Resource.cll}"  class="calllogo"/>&nbsp;&nbsp;&nbsp;  
+                         <apex:outputLink value="/{!acc.id}" 
+                                          target="_blank"> 
+                                          {!acc.Phone} 
+                         </apex:outputLink>
+                </span><br/>  
+
+                <span>
+                  <img src="{!$Resource.msg}"  class="msglogo"/>&nbsp;&nbsp;&nbsp;  
+                       <apex:outputLink value="/{!acc.id}" 
+                                        target="_blank"> 
+                                        {!acc.Email__c} 
+                       </apex:outputLink>
+                </span><br/> 
+                <span>
+                  <img src="{!$Resource.logo1}"  class="logo1 "/>&nbsp;&nbsp;&nbsp;  
+                       <apex:outputLink value="/{!acc.id}" 
+                                        target="_blank"> 
+                                        {!acc.Website} 
+                       </apex:outputLink>
+                </span><br/> 
+                <!-- <br/>{!acc.AnnualRevenue} -->
+           </div>
+        </div> <br/>  
+
+        <hr style="width:80%;text-align:center;margin-left:100px"/>
+
+    </apex:repeat>
+  </div>
+</apex:form>
+</apex:page>

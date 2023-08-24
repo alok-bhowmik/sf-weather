@@ -1,0 +1,19 @@
+<apex:page standardController="Lead" >
+    <apex:form >
+         <apex:pageBlock title="Registration Form">
+            <apex:pageBlockSection title="Fill the Details">
+                    <apex:inputField Value="{!Lead.FirstName}"/>
+                    <apex:inputField Value="{!Lead.LastName}"/>
+                    <apex:inputField Value="{!Lead.Phone}"/>
+                    <apex:inputField Value="{!Lead.Age__c}"/>
+                    <apex:inputField Value="{!Lead.Company}"/>
+                    <apex:inputField Value="{!Lead.Email}"/>
+                    <apex:inputField Value="{!Lead.Status}"/>
+                    <apex:inputField Value="{!Lead.Weight__c}"/>
+                    <apex:inputField Value="{!Lead.Gender__c}"/>
+                    <apex:inputField Value="{!Lead.Height__c}"/>
+           </apex:pageBlockSection>
+           <center><apex:commandButton value="Submit" action="{!Save}"/></center>  
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,35 @@
+<apex:page controller="membershipplanHandler">
+ <apex:form >
+    <apex:pageBlock >
+        <h1>
+            Membership Plans
+        </h1>
+         <apex:pageBlockSection rendered="{!show}" >
+             
+             <apex:inputField value="{!pak.Name}"/>
+             <apex:inputField value="{!pak.Months__c}"/>
+             <apex:inputField value="{!pak.Validity__c}"/>
+             <apex:inputField value="{!pak.Amount__c}"/>
+   
+         </apex:pageBlockSection>
+     
+     <apex:pageBlockSection rendered="{!Hide}" >
+           <apex:outputField value="{!pak.Name}"/>
+           <apex:outputField value="{!pak.Months__c}"/>
+           <apex:outputField value="{!pak.Validity__c}"/>
+           <apex:outputField value="{!pak.Amount__c}"/>
+           
+              
+     </apex:pageBlockSection>
+ 
+ <apex:pageblockButtons Location="bottom">
+       <apex:commandButton value="Save" action="{!Save}" />
+     <apex:commandButton value="Update" action="{!Edit}"/>
+     <apex:commandButton oncomplete="window.location.reload();" value="cancel"/>
+ </apex:pageblockButtons>
+     
+      
+     
+   </apex:pageBlock>
+  </apex:form>
+</apex:page>

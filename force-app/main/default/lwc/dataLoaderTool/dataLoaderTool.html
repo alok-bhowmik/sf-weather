@@ -1,0 +1,92 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 03-21-2023
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+
+<template>
+    <lightning-card >
+      <div class="slds-box slds-m-right_medium slds-m-left_medium">
+        <lightning-spinner if:true={loading}></lightning-spinner>
+        <div class="slds-align_absolute-center slds-size_Large slds-m-bottom_large" > 
+                 <lightning-card title="Data Import Tool"></lightning-card>
+        </div>
+      
+        <div class="slds-m-bottom_xx-large slds-m-right_xx-large slds-p-left_x-large slds-has-error">
+            <lightning-combobox name="Select Object"
+                                value={value}
+                                placeholder="Select Object"
+                                options={options}
+                                onchange={handleChange} >
+                                
+            </lightning-combobox>
+        </div>
+
+        <template if:true={displayFile}>
+        <div class="slds-size_Large slds-m-bottom_xx-large slds-p-left_x-large slds-size_1-of-1"> 
+          <lightning-input type="file"
+                           name="file uploader"
+                           label="Upload CSV file"
+                           multiple="false"
+                           accept=".csv"
+                           onchange={uploadFileHandler}>  
+         </lightning-input>
+        </div>
+
+        <div class="button slds-button__icon_right slds-m-top_small slds-text-align_right slds-m-right_xx-large">
+          <lightning-button variant="brand"
+                            label="Next"
+                            value={Con}
+                            onclick={nextButton}>        
+          </lightning-button>
+       </div>
+      </template>
+        
+      </div>
+    
+
+       <template if:true={showReadOnlyDataTable}>
+        <div class="slds-p-around_medium">
+            <lightning-datatable key-field="Id"
+                                 hide-checkbox-column ="true"
+                                 data={data}
+                                 columns={columns}
+                                 ></lightning-datatable>
+            <div class="slds-p-around_small slds-align_absolute-center">
+
+              <lightning-button  variant="brand"
+                                 label="CreateRecord"
+                                 onclick={handleCreate}>
+                </lightning-button>
+            </div>
+        </div>
+      </template>
+
+
+      <template if:true={showDataTable}>
+        <lightning-datatable key-field="Id"
+                             data={data}
+                             draft-values={saveDraftValues}
+                             onsave={handleSave}
+                             onrowaction={onRowActionAllObject}
+                             hide-checkbox-column
+                             columns={column}>
+        </lightning-datatable>
+        </template>   
+
+      <!-- <template if:true={rows}>
+        <div class="slds-p-around_medium">
+            <lightning-datatable key-field="Id"
+                                 hide-checkbox-column
+                                 data={data}
+                                 onrowaction={onRowActionAllObject}
+                                 columns={columns}
+                                 ></lightning-datatable>
+        </div>
+      </template> -->
+    </lightning-card>
+      
+    
+</template>

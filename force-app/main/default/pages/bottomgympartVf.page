@@ -1,0 +1,139 @@
+<apex:page >
+    <apex:form >
+         <style type="text/css">
+            .addd{
+               width: 1242px;
+               margin-left:-23.5px;
+              
+             }
+              
+             
+             .First{
+                  background-color:#000037;
+                  color: White;
+                 height: 650px;
+                 margin-top: -10px;
+             
+                }
+             
+             
+             .div1{
+             margin-left:50px;
+             font-size: 13px;
+             position:relative;
+             top:70px;
+             left:-30px;
+             }
+             .div2{
+            
+             width:200px;
+             position:relative;
+             top:-100px;
+             left:420px;
+             font-size: 13px;
+             }
+             .div3{
+          
+             width:200px;
+             position:relative;
+             top:-300px;
+             left:690px;
+             font-size: 13px;
+             }
+             .div4{
+         
+             width:250px;
+             position:relative;
+             top:-445px;
+             left:950px;
+             font-size: 13px;
+             }
+             .Bottom{
+              font-size: 16px;
+              font-color: White;
+              margin-top:-350px;
+              font-family: serif;
+             }
+             
+         </style>
+        <div class="addd">
+            
+       
+   <div class="First">   
+    <div class="div1">
+        <h1>
+            <u style="font-size: 20px">About Company</u>
+            <p  >
+                DESIRE DETERMINATION DRIVE our motto<br/><br/> says 
+                it all. We believe Fitness isn’t just<br/><br/> about
+                looking good but feeling good too.
+            </p>
+            
+            <p>
+               <apex:image url="{!$Resource.facebooklogo}" width="30" height="30"/>
+               <apex:image url="{!$Resource.twiterlogo}" width="45" height="25"/>
+               <apex:image url="{!$Resource.linkdinlogo}" width="30" height="25"/> &nbsp; 
+               <apex:image url="{!$Resource.instagramlogo}" width="30" height="25"/>
+            </p>
+        </h1>
+    </div>
+    
+      <div class="div2">
+        <h1>
+           <u style="font-size: 20px"> Important Links </u>
+            <p>
+                About Us<br/><br/>
+                Contact Us<br/><br/>
+                FAQs<br/><br/>
+                Terms and Conditions<br/><br/>
+                Privacy Policy<br/><br/>
+            </p>
+        </h1>
+    </div>
+    
+      <div class="div3">
+        <h1>
+            <u style="font-size: 20px"> Quick Links </u>
+            <p>
+                Trainers<br/><br/>
+                Careers<br/><br/>
+                BMI Calculator<br/><br/>
+            </p>
+        </h1>
+    </div>
+    
+      <div class="div4">
+        <h1>
+           <u style="font-size: 20px">Corporate Office</u>
+            <p>
+                13, ST Bed Colony, 80 Feet Main <br/><br/>
+                Road, 4th Block, Koramangala,<br/><br/>
+                Above Kotak Mahindra Bank,<br/><br/>
+                Bengaluru, Karnataka 560034
+                
+            </p>
+            <p><apex:image url="{!$Resource.phonelogo}" width="15" height="15"/>&nbsp;&nbsp;&nbsp;+91 8413813069</p>
+            <p ><a style="color:blue;" href="https://ibirds-1a-dev-ed.develop.my.site.com/MuscleManiac" target="_blank">Muscle Maniac</a></p>
+        </h1>
+    </div>
+       <div class="Bottom">
+           <p>
+               &nbsp;&nbsp;&nbsp;<span style="color: Red">Disclaimer:</span> The information contained in this website is solely pertaining to Hammers Fitness Only.The information is provided by us and while we endeavour to keep the infor-<br/>
+               &nbsp;&nbsp;&nbsp;mation up to date and correct, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy,reliability, suitability or availability<br/>
+               &nbsp;&nbsp;&nbsp;respect to the website the information,services,or related graphics contained on the website for any purpose.Any reliance you place on such information is therefore with strictly<br/>
+               &nbsp;&nbsp;&nbsp;at your own risk.In no event will we be liable for any loss or damage including without limitation,indirect or consequential loss damage inconnection with,the use of this website.<br/> 
+               &nbsp;&nbsp;&nbsp;Through this website you are able to link to other websites which are not under the control of Hammers Fitness. We have no control over the nature, content and availability of<br/>
+               &nbsp;&nbsp;&nbsp;those sites. The inclusion of any links does not necessarily imply a recommendation or endorse the views expressed within them.effort is made to keep the website up and run<br/>
+               &nbsp;&nbsp;&nbsp;smoothly. However, Hammers Fitness takes no responsibility for, and will not be liable for, the website being temporarily unavailable due to technical issues beyond our control.<br/>
+               &nbsp;&nbsp;&nbsp; 
+
+           </p>
+           <p>
+               &nbsp;&nbsp;&nbsp;<span style="color: Red">Return, Refund and Cancellation:</span> It is our obligation to inform you that we do not encourage or promote refund facilities at our gym also we do not have any cancellations of a<br/>
+               &nbsp;&nbsp;&nbsp;membership plan once the payments have been made.
+           </p>
+       </div>
+       </div>
+        </div>     
+     </apex:form>
+</apex:page>

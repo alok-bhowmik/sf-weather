@@ -1,0 +1,25 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 11-22-2022
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+    <template for:each={filesList} for:item="file">
+      <div key={file.value}>
+        <iframe class="slds-assistive-text" src={file.url}></iframe>
+      </div>
+    </template>
+      <lightning-modal-header label="Component to download all .txt files"></lightning-modal-header>
+      <lightning-modal-body>Your files are downloading....</lightning-modal-body>
+      <lightning-modal-footer>
+      <div class="slds-align_absolute-center">
+        
+        <lightning-button label="Close" 
+                          variant="brand"  
+                          onclick={handleClose}>
+        </lightning-button>
+      </div>
+    </lightning-modal-footer>   
+</template>

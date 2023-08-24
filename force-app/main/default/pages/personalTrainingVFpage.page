@@ -1,0 +1,612 @@
+<apex:page >
+     <style  type="text/css">
+         .first{
+                  background-color:#FFFFFF;
+                  color: black;
+                  margin-left:-20px;
+                  margin-top:-10px;
+                   margin-bottom:-10px;
+                  margin-right:-20px;
+                  height: 700px;
+                  width:1200px;
+                }
+           .Body{
+         height: 300px;
+                   
+               }         
+         
+<!------------------------------------------table-------------------------------------------------------------------->         
+     table, th, td {
+        border: 2px solid black;
+        border-collapse: collapse;
+        padding: 2px;
+        background-color:;
+        }
+         .table tr {
+         height: 40px;
+         font-size:13.85px;
+         
+         }
+         
+         .table1 tr {
+         height: 10px;
+         font-size:13.85px;
+       
+         }
+         
+         .table2 tr {
+         height: 10px;
+         font-size:13.7px;
+        
+         }
+         
+         thead {
+         background-color:#B9BAB3;
+         }
+         tbody {
+         background-color:#bcd4e6;
+         }
+         tfoot {
+         background-color:#ffc40c;
+         }
+
+ <!----------------------------------------------------------------------------------------------------------------->        
+         .block1{
+          margin-left: 10px;
+          margin-right:10px;
+          width:500px;
+         position:relative;
+           
+             left:5px;
+         }
+         .block2{
+          margin-left: 10px;
+          margin-right:10px;
+          width:500px;
+           position:relative;
+             top:-177px;
+             left:390px;
+         }
+         .block3{
+          margin-left: 10px;
+          margin-right:10px;
+          width:500px;
+          position:relative;
+             top:-353px;
+             left:790px;
+         }
+          .block4{
+          margin-left: 10px;
+          margin-right:10px;
+          width:500px;
+         position:relative;
+            top:-330px;
+             left:5px;
+         }
+             .block5{
+          margin-left: 10px;
+          margin-right:10px;
+          width:500px;
+           position:relative;
+             top:-505px;
+             left:390px;
+         }
+         
+         .block6{
+          margin-left: 10px;
+          margin-right:10px;
+          width:500px;
+          position:relative;
+             top:-681px;
+             left:790px;
+         }
+         
+          .block7{
+          margin-left: 10px;
+          margin-right:10px;
+          width:500px;
+         position:relative;
+              top:-655px;
+             left:5px;
+         }
+         
+          .block8{
+          margin-left: 10px;
+          margin-right:10px;
+          width:500px;
+         position:relative;
+            top:-830px;
+             left:390px;
+         }
+          .block9{
+          margin-left: 10px;
+          margin-right:10px;
+          width:500px;
+         position:relative;
+            top:-1007px;
+             left:790px;
+         }
+         h2{
+         
+          margin-left: 400px;
+          
+         }
+      
+ <!------------------------------------------Buy--------- text-align: center;------------------------------------------------------------>        
+         .buybotton1{
+          margin-left: 150px;
+          font-size: 16px;
+          
+         }
+         .buybotton2{
+          margin-left: 180px;
+         font-size: 16px
+         }
+         
+         .buybotton3{
+          margin-left: 180px;
+         font-size: 16px
+         }
+         
+         .buybotton4{
+          margin-left: 150px;
+          font-size: 16px;
+          
+         }
+         .buybotton5{
+          margin-left: 180px;
+         font-size: 16px
+         }
+         
+         .buybotton6{
+          margin-left: 180px;
+         font-size: 16px
+         }
+         
+         .buybotton7{
+          margin-left: 150px;
+          font-size: 16px;
+          
+         }
+         .buybotton8{
+          margin-left: 180px;
+         font-size: 16px
+         }
+         
+         .buybotton9{
+          margin-left: 180px;
+         font-size: 16px
+         }
+ <!---------------------------------------------------------------------------------------------------------------->      
+    </style>
+    <apex:form >
+        <div class="first">
+         
+      
+        <div class="Body">
+            
+      
+              <!--div-->
+               <br/>  <b> <h2 style="font-size:40px;   color:black;" >Personal Training</h2></b> <br/><br/><br/><br/><br/>
+ <!----------------------------------1st Div------------------------------------------------------------------------>               
+                   <div class="block1">
+                        
+                             <table class="table" >
+                                <thead>
+                                    <tr>
+                                    <th  colspan="3">
+                                       
+                                       
+                                       
+                                       
+                                       <b  style="margin-left:130px"> Platinum 35</b></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <th>
+                                         <span style="margin-left:20px"> Validity </span> 
+                                         <span style="margin-left:100px"> : </span> 
+                                         <span style="margin-left:125px"> 60 Days </span> 
+                                        
+                                        
+                                            
+                                        </th>
+                                   </tr>
+                                  
+                                  
+                                   <tr>
+                                        <th >
+                                        
+                                        <span style="margin-left:20px"> Amount </span> 
+                                         <span style="margin-left:100px"> : </span> 
+                                         <span style="margin-left:125px"> 42000 </span> 
+                                            
+                                        </th>
+                                    </tr>
+                                  </tbody>
+                                 <tfoot>
+                                 <tr> 
+                                       <th>
+                                           <a href="https://buy.stripe.com/test_fZeg2kds0dZg8cE004" class="buybotton1">Buy</a>
+                                       </th>
+                                 </tr>
+                                 </tfoot>
+                               </table><br/>                            
+                          
+                       </div>
+                   <!--/div-->
+ <!--------------------------------------------2nd Div----------------------------------------------------------------->        
+        
+                  <div  class="block2">                 
+                                 
+                           <table class="table" >
+                                <thead>
+                                    <tr>
+                                    <th  colspan="3">
+                                       
+                                       
+                                       
+                                       
+                                       <b style="margin-left:150px"> Platinum 20</b></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <th>
+                                        <span style="margin-left:20px"> Validity </span> 
+                                         <span style="margin-left:100px"> : </span> 
+                                         <span style="margin-left:125px"> 40 Days </span> 
+                                         
+                                        </th>
+                                   </tr>
+                                  
+                                  
+                                   <tr>
+                                        <th><span style="margin-left:20px"> Amount </span> 
+                                         <span style="margin-left:100px"> : </span> 
+                                         <span style="margin-left:125px"> 24000</span> 
+                                            
+                                        </th>
+                                    </tr>
+                                  </tbody>
+                                 <tfoot>
+                                 <tr> 
+                                       <th>
+                                           <a href="https://buy.stripe.com/test_bIYbM4gEc6wO0KcfZ3" class="buybotton2">Buy</a>
+                                       </th>
+                                 </tr>
+                                 </tfoot>
+                               </table><br/>        
+                       
+                 
+              </div>
+ <!------------------------------------------3rd Div----------style="width:30%"----------------------------------------------------->       
+           <div  class="block3" >   
+              
+                      <table class="table" >
+                                <thead>
+                                    <tr>
+                                    <th  colspan="3">
+                                       
+                                       
+                                       
+                                       
+                                       <b style="margin-left:150px"> Platinum 12</b></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <th>
+                                        
+                                        <span style="margin-left:20px"> Validity </span> 
+                                         <span style="margin-left:100px"> : </span> 
+                                         <span style="margin-left:125px"> 20 Days </span> 
+                                         
+                                        </th>
+                                   </tr>
+                                  
+                                  
+                                   <tr>
+                                        <th><span style="margin-left:20px"> Amount </span> 
+                                         <span style="margin-left:100px"> : </span> 
+                                         <span style="margin-left:125px"> 14400 </span> 
+                                            
+                                        </th>
+                                    </tr>
+                                  </tbody>
+                                 <tfoot>
+                                 <tr> 
+                                       <th>
+                                           <a href="https://buy.stripe.com/test_eVaaI087G08qcsU5kr" class="buybotton3">Buy</a>
+                                       </th>
+                                 </tr>
+                                 </tfoot>
+                               </table><br/>        
+     </div>
+ <!-----------------------------------------------4th Div------------------------------------------------------------>
+      <div class="block4">
+                        
+                             <table class="table" >
+                                <thead>
+                                    <tr>
+                                    <th  colspan="3">
+                                       
+                                       
+                                       
+                                       
+                                      <b style="margin-left:150px"> Gold 35</b></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <th>
+                                        
+                                        <span style="margin-left:20px"> Validity </span> 
+                                         <span style="margin-left:100px"> : </span> 
+                                         <span style="margin-left:125px"> 60 Days </span> 
+                                         
+                                        </th>
+                                   </tr>
+                                  
+                                  
+                                   <tr>
+                                        <th><span style="margin-left:20px"> Amount </span> 
+                                         <span style="margin-left:100px"> : </span> 
+                                         <span style="margin-left:125px"> 33250 </span> 
+                                            
+                                        </th>
+                                    </tr>
+                                  </tbody>
+                                 <tfoot>
+                                 <tr> 
+                                       <th>
+                                           <a href="https://buy.stripe.com/test_8wMcQ8ew43kCboQ14c" class="buybotton4">Buy</a>
+                                       </th>
+                                 </tr>
+                                 </tfoot>
+                               </table><br/>                            
+                          
+                       </div>
+            
+ <!----------------------------------------------5th Div------------------------------------------------------------->
+                
+             <div class="block5">
+                        
+                             <table class="table" >
+                                <thead>
+                                    <tr>
+                                    <th  colspan="3">
+                                       
+                                       
+                                       
+                                       
+                                       <b style="margin-left:150px"> Gold 20</b></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <th>
+                                        
+                                        <span style="margin-left:20px"> Validity </span> 
+                                         <span style="margin-left:100px"> : </span> 
+                                         <span style="margin-left:125px"> 40 Days </span> 
+                                         
+                                        </th>
+                                   </tr>
+                                  
+                                  
+                                   <tr>
+                                        <th>
+                                        
+                                        <span style="margin-left:20px"> Amount </span> 
+                                         <span style="margin-left:100px"> : </span> 
+                                         <span style="margin-left:125px"> 19000 </span> 
+                                            
+                                        </th>
+                                    </tr>
+                                  </tbody>
+                                 <tfoot>
+                                 <tr> 
+                                       <th>
+                                           <a href="https://buy.stripe.com/test_28o17qbjSf3k64wbIR" class="buybotton5">Buy</a>
+                                       </th>
+                                 </tr>
+                                 </tfoot>
+                               </table><br/>                            
+                          
+                       </div>
+            
+ <!----------------------------------------------6th Div-------------------------------------------------------------->
+           
+                   <div class="block6">
+                        
+                             <table class="table" >
+                                <thead>
+                                    <tr>
+                                    <th  colspan="3">
+                                       
+                                       
+                                       
+                                       
+                                       <b style="margin-left:150px"> Gold 12</b></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <th>
+                                        
+                                        <span style="margin-left:20px"> Validity </span> 
+                                         <span style="margin-left:100px"> : </span> 
+                                         <span style="margin-left:125px"> 20 Days </span> 
+                                         
+                                        </th>
+                                   </tr>
+                                  
+                                  
+                                   <tr>
+                                        <th>
+                                        
+                                        <span style="margin-left:20px"> Amount </span> 
+                                         <span style="margin-left:100px"> : </span> 
+                                         <span style="margin-left:125px"> 11400 </span> 
+                                            
+                                        </th>
+                                    </tr>
+                                  </tbody>
+                                 <tfoot>
+                                 <tr> 
+                                       <th>
+                                           <a href="https://buy.stripe.com/test_00g6rKds03kC2SkaEO" class="buybotton6">Buy</a>
+                                       </th>
+                                 </tr>
+                                 </tfoot>
+                               </table><br/>                            
+                          
+                       </div>        
+<!----------------------------------------------7th Div--------------------------------------------------------------->              
+                       <div class="block7">
+                        
+                             <table class="table" >
+                                <thead>
+                                    <tr>
+                                    <th  colspan="3">
+                                       
+                                       
+                                       
+                                       
+                                       <b style="margin-left:150px"> Silver 35</b></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <th>
+                                        
+                                        <span style="margin-left:20px"> Validity </span> 
+                                         <span style="margin-left:100px"> : </span> 
+                                         <span style="margin-left:125px"> 60 Days </span> 
+                                         
+                                          </th>
+                                   </tr>
+                                  
+                                  
+                                   <tr>
+                                        <th>
+                                        
+                                        <span style="margin-left:20px"> Amount </span> 
+                                         <span style="margin-left:100px"> : </span> 
+                                         <span style="margin-left:125px"> 26250 </span> 
+                                            
+                                        </th>
+                                    </tr>
+                                  </tbody>
+                                 <tfoot>
+                                 <tr> 
+                                       <th>
+                                           <a href="https://buy.stripe.com/test_eVacQ8ew49J0eB2aEP" class="buybotton7">Buy</a>
+                                       </th>
+                                 </tr>
+                                 </tfoot>
+                               </table><br/>                            
+                          
+                       </div>  
+<!---------------------------------------------8th Div---------------------------------------------------------------->
+                       <div class="block8">
+                        
+                             <table class="table" >
+                                <thead>
+                                    <tr>
+                                    <th  colspan="3">
+                                       
+                                       
+                                       
+                                       
+                                        <b style="margin-left:150px"> Silver 20 </b></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <th>
+                                        
+                                        <span style="margin-left:20px"> Validity </span> 
+                                         <span style="margin-left:100px"> : </span> 
+                                         <span style="margin-left:125px"> 40 Days </span> 
+                                         
+                                        </th>
+                                   </tr>
+                                  
+                                  
+                                   <tr>
+                                        <th>
+                                        
+                                        <span style="margin-left:20px"> Amount </span> 
+                                         <span style="margin-left:100px"> : </span> 
+                                         <span style="margin-left:125px"> 15000 </span> 
+                                            
+                                        </th>
+                                    </tr>
+                                  </tbody>
+                                 <tfoot>
+                                 <tr> 
+                                       <th>
+                                           <a href="https://buy.stripe.com/test_8wM7vO9bK8EWfF67sE" class="buybotton8">Buy</a>
+                                       </th>
+                                 </tr>
+                                 </tfoot>
+                               </table><br/>                            
+                          
+                       </div>
+ <!--------------------------------------------9th Div---------------------------------------------------------------->
+                         <div class="block9">
+                        
+                             <table class="table" >
+                                <thead>
+                                    <tr>
+                                    <th  colspan="3">
+                                       
+                                       
+                                       
+                                       
+                                       <b style="margin-left:150px"> Silver 12</b></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <th>
+                                        
+                                        <span style="margin-left:20px"> Validity </span> 
+                                         <span style="margin-left:100px"> : </span> 
+                                         <span style="margin-left:125px"> 20 Days </span> 
+                                         
+                                         
+                                        </th>
+                                   </tr>
+                                  
+                                  
+                                   <tr>
+                                        <th>
+                                        
+                                        <span style="margin-left:20px"> Amount </span> 
+                                         <span style="margin-left:100px"> : </span> 
+                                         <span style="margin-left:125px"> 9000 </span> 
+                                            
+                                        </th>
+                                    </tr>
+                                  </tbody>
+                                 <tfoot>
+                                 <tr> 
+                                       <th>
+                                           <a href="https://buy.stripe.com/test_3cseYg3Rq08q64waER" class="buybotton9">Buy</a>
+                                       </th>
+                                 </tr>
+                                 </tfoot>
+                               </table><br/>                            
+                          
+                       </div>
+            
+ <!------------------------------------------------------------------------------------------------------------------->
+              </div>
+             
+            </div>
+    </apex:form>
+</apex:page>

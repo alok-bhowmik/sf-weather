@@ -1,0 +1,16 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 08-23-2023
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+    <lightning-card title="Weather in {cityName}" icon-name={weatherIcon}>
+        <div class="slds-m-around_medium">
+            <div><strong>Temperature:</strong> {currentTemperature}°C</div>
+            <div><strong>Description:</strong> {weatherDescription}</div>
+            <div><img src={iconUrl} alt="Weather Icon" /></div>
+        </div>
+    </lightning-card>
+</template>

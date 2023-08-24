@@ -1,0 +1,16 @@
+<apex:page standardController="Lead" recordSetVar="Leads">
+    <apex:pageBlock title="Lead List">
+        <!-- leads List -->
+        <apex:pageBlockTable value="{!Leads}" var="ld">
+          <apex:column value="{! ld.Name }"/>
+          <apex:column value="{! ld.Phone }"/> 
+              <apex:column value="{! ld.Weight__c }"/>
+             <apex:column value="{! ld.Height__c }"/>
+            <apex:column value="{! ld.Gender__c }"/>
+             <apex:column value="{! ld.Age__c }"/>
+            <apex:column value="{! ld.Company }"/>
+            <apex:column value="{! ld.Email }"/>
+            <apex:column value="{! ld.LeadSource }"/>
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+</apex:page>
